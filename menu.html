@@ -7,86 +7,161 @@
     <form name="frm1" action="menu.html" method="post">
       <center><table width=50%>
         <tr>
-           <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Nombres: <br></font></td><td></td>
-          <td></td><td><center><input type="text" name="user" placeholder="Nombres" required><br><br></td><td></td>
+           <td></td><td><center><h1><font face="Times new roman" size="30" color="#3498db"> Formulario de registro <br></font></h1></td><td></td>
+        </tr>
+      </table></center>
+      <center><table width=50% aling="right">
+        <tr>
+           <td></td><td><center><font face="Times new roman" size="5" color="white"> Nombres:</font>
+           <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+           <td></td><td><left><input type="text" name="user" placeholder="Nombres" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Apellidos: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Apellidos" required><br><br></td><td></td>
+          <td></td><td><center><font face="Times new roman" size="5" color="white"> Apellidos:</font>
+          <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+          <td></td><td><left><input type="text" name="user" placeholder="Apellidos" pattern="{a-z}" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Tipo identificacion: <br></font></td><td></td>
-         <td></td><td><center><select name="Identificacion">
-
-<option>TI</option>
-<option>CC</option>
-<option>CE</option>
-<option>RC</option>
-<option>PS</option>
-
-</select><br><br></td><td></td>
+          <td></td><td><center><font face="Times new roman" size="5" color="white"> Tipo identificacion:</font>
+          <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+          <td></td><td><left><select name="Identificacion">
+            <option></option>
+            <option>TI</option>
+            <option>CC</option>
+            <option>CE</option>
+            <option>RC</option>
+            <option>PS</option>
+          </select><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Nro. identificacion: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Identificaion" required><br><br></td><td></td>
+          <td></td><td><center><font face="Times new roman" size="5" color="white"> Nro. identificacion:</font>
+          <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+          <td></td><td><left><input type="number" min="0" name="user" placeholder="Nª De Identificaion" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Gènero: <br></font></td><td></td>
-         <td></td><td><center><select name="Genero">
-
-<option>Masculino</option>
-
-<option>Femenino</option>
-
-<option>Otro</option>
-
-</select><br><br></td><td></td>
+          <td></td><td><center><font face="Times new roman" size="5" color="white"> Gènero:</font>
+          <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+          <td></td><td><left><select name="Genero">
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro</option>
+            </select><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Telefono: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Telefono" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Telefono: </font><br></td><td></td>
+            <td></td><td><left><input type="number" min="0" name="user" placeholder="Nª De Telefono" minlength="7" maxlength="7"  style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Celular: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Celular" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Celular:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><input type="number" minlength="10" maxlength="10" min="0" name="user" placeholder="Nª De Celular" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Dpto. de nacimiento: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Departamento" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Dpto. de nacimiento:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><select name="Ciudad">
+              <option></option>
+              <option>Amazonas</option>
+              <option>Antioquia</option>
+              <option>Arauca</option>
+              <option>Atlantico</option>
+              <option>Bolivar</option>
+              <option>Boyaca</option>
+              <option>Caldas</option>
+              <option>Caqueta</option>
+              <option>Casanare</option>
+              <option>Cauca</option>
+              <option>Cesar</option>
+              <option>Choco</option>
+              <option>Cordoba</option>
+              <option>Cundinamarca</option>
+              <option>Guainia</option>
+              <option>Guaviare</option>
+              <option>Huila</option>
+              <option>Guajira</option>
+              <option>Magdalena</option>
+              <option>Meta</option>
+              <option>Nariño</option>
+              <option>Norte de Santander</option>
+              <option>Putumayo</option>
+              <option>Quindio</option>
+              <option>Risaralda</option>
+              <option>San Andres</option>
+              <option>Santander</option>
+              <option>Sucre</option>
+              <option>Tolima</option>
+              <option>Valle del cauca</option>
+              <option>Vaupes</option>
+              <option>Vichada</option>
+              </select><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Ciudad de nacimiento: <br></font></td><td></td>
-         <td></td><td><center><select name="Ciudad">
-
-<option>Pasto</option>
-
-<option>Bogota</option>
-
-<option>Cali</option>
-
-</select><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Ciudad de nacimiento:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><select name="Ciudad">
+                <option></option>
+                <option>Leticia</option>
+                <option>Medellin</option>
+                <option>Arauca</option>
+                <option>Barranquilla</option>
+                <option>Cartagena</option>
+                <option>Tunja</option>
+                <option>Manizales</option>
+                <option>Florencia</option>
+                <option>Yopal</option>
+                <option>Popayan</option>
+                <option>Valledupar</option>
+                <option>Quibdo</option>
+                <option>Monteria</option>
+                <option>Bogota</option>
+                <option>Puerto Inirida</option>
+                <option>San Jose del Guavire</option>
+                <option>Neiva</option>
+                <option>Riohacha</option>
+                <option>Santa Marta</option>
+                <option>Villavicencio</option>
+                <option>Pasto</option>
+                <option>Cucuta</option>
+                <option>Mocoa</option>
+                <option>Armenia</option>
+                <option>Pereira</option>
+                <option>San Andres</option>
+                <option>Bucaramanga</option>
+                <option>Sincelejo</option>
+                <option>Ibague</option>
+                <option>Cali</option>
+                <option>Mitu</option>
+                <option>Puerto Carreño</option>
+              </select><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Correo electronico: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Correo electronico" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Correo electronico:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><input type="text" name="user" placeholder="Correo electronico" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Contraseña: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Contraseña" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Contraseña:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><input type="text" name="user" placeholder="Contraseña" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Confirmar contraseña: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Confirmar contraseña" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Confirmar contraseña:</font>
+            <font face="Times new roman" size="5" color="red"> * </font><br></td><td></td>
+            <td></td><td><left><input type="text" name="user" placeholder="Confirmar contraseña" required style="border-radius:5px"><br><br></td><td></td>
         </tr>
         <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Foto: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" required><br><br></td><td></td>
+            <td></td><td><center><font face="Times new roman" size="5" color="white"> Foto: <br></font></td><td></td>
+            <td></td><td><center>
+              <form enctype="multipart/form-data" action="uploader.php" method="POST">
+              <input name="uploadedfile" type="file" />
+              </form>
+            <br><br></td><td></td>
         </tr>
 
       </table></center>
       <center><table width=50%>
       <tr>
-         <td></td><td><center><input type="submit" value="Ingresar"></center></td><td></td>
+         <td></td><td><center><input type="submit" value="Registrarse"></center></td><td></td>
       </tr>
       </table></center>
     </form>
